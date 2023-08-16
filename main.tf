@@ -43,7 +43,7 @@ resource "aws_security_group_rule" "blog_http_in"{
   protocal    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
-  security_group_id = aws_security_group.blog.id.
+  security_group_id = aws_security_group.blog.id
 }
 resource "aws_security_group_rule" "blog_https_in"{
   type        = "ingress"
@@ -52,7 +52,7 @@ resource "aws_security_group_rule" "blog_https_in"{
   protocal    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
-  security_group_id = aws_security_group.blog.id.
+  security_group_id = aws_security_group.blog.id
 }
 resource "aws_security_group_rule" "blog_everything_out"{
   type        = "egress"
@@ -61,5 +61,5 @@ resource "aws_security_group_rule" "blog_everything_out"{
   protocal    = "tcp"
   cidr_blocks = ["0.0.0.0/0"]
 
-  security_group_id = aws_security_group.blog.id.
+  security_group_id = aws_security_group.blog.id
 }
